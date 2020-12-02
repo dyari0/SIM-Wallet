@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B39DDB</color>
+    <color name="colorPrimaryDark">#D0334341</color>
+    <color name="colorAccent">#90CAF9</color>
+    <color name="asiaCell">#B71C1C</color>
+    <color name="Korek">#0D47A1</color>
+    <color name="Developer">#536DFE</color>
+    <color name="black">#FF000000</color>
+    <color name="dark">#85775D</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

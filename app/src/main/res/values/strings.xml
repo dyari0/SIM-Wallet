@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SIM Wallet</string>
+    <string name="SimMaj">
+      ئەو سیمکارتە هەلبژێرە کە لەسەر مۆبیلەکەتە،\nلە لای راستەوە کرتە لە بازنەکە بکە.
+
+    </string>
+    <string name="developer_name">Name : Dyari Nasih</string>
+    <string name="developer_study">study : Kalar Computer institude (KCI)</string>
+
+</resources>

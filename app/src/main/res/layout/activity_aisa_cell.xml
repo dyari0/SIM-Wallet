@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AsiaCell">
+
+    <LinearLayout
+        android:id="@+id/asia"
+        android:layout_width="388dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/backgrownd_ais"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="RtlCompat">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:fontFamily="serif-monospace"
+            android:text="AsiCell"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+        <ImageButton
+            android:id="@+id/editSim"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_edit"
+            android:layout_marginRight="20dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/asia"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:fontFamily="serif-monospace"
+        android:text="داخلکردنی کارت"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/Phon_number"
+        android:layout_width="369dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/asia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginRight="5dp"
+        android:inputType="number"
+        android:background="@drawable/bg_round_txt_send"
+        android:gravity="center"
+        android:hint="کۆدی نهێنی بنوسە" />
+
+    <Button
+        android:id="@+id/daxlAsia"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Phon_number"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/backgrownd_ais"
+        android:text="داخڵکردن"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+    <Button
+        android:id="@+id/zaninAsia"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/daxlAsia"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/backgrownd_ais"
+        android:text="باڵانسەکەم"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/nav_bg"
+        android:layout_alignParentBottom="true"
+        android:elevation="16dp"
+        android:padding="8dp"
+        android:id="@+id/nav"
+        app:itemRippleColor="#DA0101"
+        app:itemIconTint="#BE3B3C3E"
+        app:itemTextColor="#3E3A36"
+        android:soundEffectsEnabled="true"
+        app:menu="@menu/app_menu"
+        />
+
+</RelativeLayout>

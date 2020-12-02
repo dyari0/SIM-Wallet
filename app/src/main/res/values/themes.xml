@@ -1,0 +1,10 @@
+<resources >
+    <!-- Base application theme. -->
+    <style name="Theme.IQSIMWallet" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#8C9EFF</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+</resources>

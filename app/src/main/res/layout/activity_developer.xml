@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Developer">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:gravity="right">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/developer"
+            app:lottie_autoPlay="true"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="casual"
+                    android:text="Developer"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+
+                    android:textColor="@color/black"
+                    android:text="@string/developer_name"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="@string/developer_study"/>
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="#000000"
+                    android:fontFamily="casual"
+                    android:text="Contact to developer"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageButton
+                        android:id="@+id/facebook"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/facebook"/>
+                    <ImageButton
+                        android:id="@+id/ing"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="70dp"
+                        android:background="@drawable/instagram"/>
+
+                    <ImageButton
+                        android:id="@+id/emale"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="140dp"
+                        android:background="@drawable/gmail"/>
+                    <ImageButton
+                        android:id="@+id/ytb"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="210dp"
+                        android:background="@drawable/youtube"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_bg"
+        android:layout_alignParentBottom="true"
+        android:elevation="16dp"
+        android:padding="8dp"
+        android:id="@+id/nav"
+        app:itemRippleColor="#DA0101"
+        app:itemIconTint="#BE3B3C3E"
+        app:itemTextColor="#3E3A36"
+        android:soundEffectsEnabled="true"
+        app:menu="@menu/app_menu"
+        />
+
+</RelativeLayout>
